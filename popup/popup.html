@@ -3,29 +3,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://platform.linkedin.com "
-    />
 
     <title>NASA picture of the day</title>
-    <style>
-      img {
-        width: 500px;
-        height: 300px;
-      }
-      body {
-        background-color: gray;
-      }
-    </style>
+    <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
     <div>
       <img src="/images/math.gif" alt="Display the stars image" />
-      <button id="sendmessageid">Display</button>
+      <!-- <button id="sendmessageid">Display</button>
+      <input /> -->
       <h1 id="text_d">Hi</h1>
+      <h4>Paragraph replacer</h4>
+      <p><input type="text" id="userinput" /></p>
     </div>
   </body>
 </html>
 
 <script src="popup.js"></script>
+<script src="content.js"></script>
